@@ -1,0 +1,100 @@
+/* style.css */
+.App {
+    text-align: center;
+  }
+  
+  .navbar {
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+/* Add this CSS to style.css */
+.product-collage-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.product-image {
+    text-align: center;
+    margin: 10px;
+}
+
+.product-image-container {
+    width: 300px; /* Adjust as needed */
+    height: 400px; /* Ensure square containers */
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Add border radius for curved edges */
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scroll-buttons {
+    display: flex;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* style.css */
+
+.product-slideshow-container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .product-slideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .product-slideshow-container img:not(:first-child) {
+    opacity: 0;
+  }
+
+  .contact-card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    margin-right: 10px;
+  }
+  
